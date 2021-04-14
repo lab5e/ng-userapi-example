@@ -1,0 +1,27 @@
+<form>
+    <div>
+        <label for="token">API Token</label>
+        <input id="token" name="token" size="80" type="text" [(ngModel)]="token"
+            placeholder="Paste your API token here" />
+    </div>
+    <button id="load-profile" (click)="loadProfile()">Load profile</button>
+</form>
+
+<form>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" size="60" type="text" [(ngModel)]="name" placeholder="Name goes here" />
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" size="60" type="text" [(ngModel)]="email" placeholder="Email goes here" />
+    </div>
+    <div>
+        <label for="avatar-url">Name</label>
+        <input id="avatar-url" name="avatar-url" size="60" type="text" [(ngModel)]="avatarUrl"
+            placeholder="Avatar URL goes here" />
+    </div>
+</form>
+<div [ngClass]="{'error': errorMessage != ''}">
+    {{ errorMessage }}
+</div>

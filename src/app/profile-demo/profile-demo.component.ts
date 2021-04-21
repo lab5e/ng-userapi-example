@@ -26,7 +26,7 @@ export class ProfileDemoComponent implements OnInit {
     this.profileService.configuration.credentials['APIToken'] = this.token;
 
     // Retrieve the profile
-    this.profileService.userGetUserProfile().subscribe((profile) => {
+    this.profileService.getUserProfile().subscribe((profile) => {
       // Success - update the properties on the component and clear any error
       this.name = profile.name;
       this.email = profile.email;

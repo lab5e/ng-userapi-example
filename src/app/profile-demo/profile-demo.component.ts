@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService, Configuration, ConfigurationParameters } from '@lab5e/ng-userapi-t0';
+import { ProfileService, Configuration, ConfigurationParameters } from '@lab5e/ng-userapi';
 
 @Component({
   selector: 'app-profile-demo',

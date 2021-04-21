@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 // Include ApiModule and HttpClientModule here for the @lab5e/ng-userapi library
 // The HttpClientModule can only be included once - please refer to the README.md
 // file in the source repository at https://github.com/lab5e/ng-userapi
-import { ApiModule } from '@lab5e/ng-userapi-t0';
+import { ApiModule } from '@lab5e/ng-userapi';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
